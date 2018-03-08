@@ -1,1 +1,1 @@
-adf
+print("Hello World");
