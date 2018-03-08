@@ -1,1 +1,1 @@
-print("Hello World");//doesn't works
+document.write("Hello World");
