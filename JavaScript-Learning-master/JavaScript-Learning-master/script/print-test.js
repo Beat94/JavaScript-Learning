@@ -1,0 +1,1 @@
+document.write("hello world"); //with the combination of document.write it is possible to write an output directly on the running site
