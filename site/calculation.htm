@@ -1,16 +1,19 @@
+<!DOCTYPE html>
 <html>
 	<head>
+		<meta charset="utf-8"/>
 		<link href="..\style\style.css" rel="stylesheet" type="text/css">
 		<title>Calculation</title>
+		<script type="text/javascript" href="..\script\calculation.js" onclick="addition()"></script>
 	</head>
 	<body>
 		<h1>Calculation</h1>		
-		<form name="add" method="POST" action="">
-			<input type="text" name="adnum1" onclick="addition()"></input> + <input type="text" name="adnum2" onclick="addition()"></input><br>
-			<input type="button" value="add" onclick="addition()"></input>
+		<form id="add" action="addition()" method="get">
+			<input type="text" id="adnum1"></input> + <input type="text" id="adnum2"></input><br>
+			<input type="button" value="add" onclick="return addition()"></input><br>
 			
-			Ergebnis:<script type="text/javascript" href="..\script\calculation.js"></script>
-			<span id="output">0</span>
+			Ergebnis:
+			<output id="output">0</output>
 		</form>
 	</body>
 </html>
