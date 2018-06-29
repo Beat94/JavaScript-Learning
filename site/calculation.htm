@@ -1,19 +1,15 @@
-<!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="utf-8"/>
 		<link href="..\style\style.css" rel="stylesheet" type="text/css">
 		<title>Calculation</title>
-		<script type="text/javascript" href="..\script\calculation.js" onclick="addition()"></script>
+		<script src="..\script\calculation.js"></script>
 	</head>
-	<body>
+	<body onload="getNums()">
 		<h1>Calculation</h1>		
-		<form id="add" action="addition()" method="get">
-			<input type="text" id="adnum1"></input> + <input type="text" id="adnum2"></input><br>
-			<input type="button" value="add" onclick="return addition()"></input><br>
-			
-			Ergebnis:
-			<output id="output">0</output>
-		</form>
+		<input type="text" name="name-adnum1" id="adnum1"></input> + <input type="text" name="name-adnum2" id="adnum2"></input><br>
+		<input type="button" value="add" onClick="addition()"></input><br>
+		Ergebnis:
+		<div name="output-msg">0</div><br>
+		<a href="link-list.htm">back</a>
 	</body>
 </html>
