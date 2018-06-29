@@ -9,5 +9,5 @@ function showMessage(){
 }
 
 function printMessage(){
-	document.getElementsByName('textfield-msg').innerHTML = textbox.value;
+	document.getElementsByName('textfield-msg')[0].innerHTML = textbox.value;
 }
