@@ -7,7 +7,7 @@ function time(){
 	minute = now.getMinutes();//set the variable with a count of minutes
 	
 	output = hour + ":" + minute;
-	console.log(output);//bring the result on the console
+	//console.log(output);//bring the result on the console
 	
 	document.getElementsByName('clock-output')[0].innerHTML = output;
 }
@@ -15,6 +15,7 @@ function time(){
 function timeRepeat(){
 	
 	while(1>0){
-		setTimeout("time();", 3000);
+		time();
+		setTimeout(3000);
 	}
 }
