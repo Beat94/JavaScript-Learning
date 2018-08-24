@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link href="..\style\style.css" rel="stylesheet" type="text/css">
+		<script src="..\script\plot-graphic-interactive.js"></script>
+		<title>Interactive function plotter</title>
+		
+		<script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/spectrum/1.7.0/spectrum.min.js"></script>
+		<script src="https://d3js.org/d3.v3.min.js"></script>
+		<script src="https://mauriciopoppe.github.io/function-plot/js/function-plot.js"></script>
+	</head>
+	<body onload="plot();">
+		<h1>Interactive function plotter</h1>
+		<table>
+			<tr>
+				<td>xMin: value</td><td><input type=number id="xMin"></td>
+			</tr>
+			<tr>
+				<td>xMax: value</td><td><input type=number id="xMax"></td>
+			</tr>
+			<tr>
+				<td>yMin: value</td><td><input type=number id="yMin"></td>
+			</tr>
+			<tr>
+				<td>yMax: value</td><td><input type=number id="xMax"></td>
+			</tr>
+			<tr>
+				<td>Color value:</td><td><input type=color id="color"></td>
+			</tr>
+			<tr>
+				<td>Function to plot:</td><td><input type="text" id="mathFunction"></td>
+			</tr>
+		</table>
+		
+		<button onclick="plot();">Enter</button>
+		
+		<section id="plot">
+			<div id="myFunction"></div>
+		</section>
+		
+		<a href="link-list.htm">back</a>
+	</body>
+</html>
